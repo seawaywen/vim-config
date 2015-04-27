@@ -65,6 +65,7 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 map <leader>tw :NERDTreeToggle<Enter>
+map <leader>ts :FufBuffer<cr>
 
 " Uncomment to use Jamis Buck's file opening plugin
 "map <Leader>t :FuzzyFinderTextMate<Enter>
@@ -79,7 +80,7 @@ map <leader>tw :NERDTreeToggle<Enter>
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
 autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
-
+autocmd FileType yaml setlocal foldmethod=indent shiftwidth=2 tabstop=2 expandtab 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 "autocmd vimenter * NERDTree 
